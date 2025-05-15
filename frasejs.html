@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Meu Primeiro JavaScript</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6717bc;
+        }
+        #mensagem {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Página com JavaScript</h1>
+    
+    <button onclick="mostrarFrase()">Clique Aqui</button>
+    
+    <div id="mensagem"></div>
+
+    <script>
+        function mostrarFrase() {
+            document.getElementById('mensagem').innerHTML = 
+                'A professora Najara é a melhor da ETEC';
+        }
+    </script>
+</body>
+</html>
